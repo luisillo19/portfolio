@@ -2,18 +2,45 @@
 @import url(normalize.min.css);
 @import url(reset.css);
 
-/* *********************************** */
-/* *** ESTILOS GENERALES *** */
-/* *********************************** */
-
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "Poppins";
+  src: url("font/poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* ******************************** */
+/* DEFINICION VARIABLES */
+:root{
+  --color-principal: #fefefe;
+  --color-secondary: #04B4E0;
 
-/* Colores */
+  --color-background: #F2F7F9;
+  --color-transparent: transparent;
 
-/* ******************************** */
+  --color-icon: #B5B6B7;
+  --color-title: #222222;
+  --color-subtitle: #888;
+  --color-text: #555;
+
+}
+
+/* ESTILOS GENERALES  */
+html{
+  font-size: 10px;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-background);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-title);
+} 
+
+/* ESTRUCTURA PRINCIPAL  */

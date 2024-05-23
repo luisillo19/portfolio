@@ -3,13 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- SEO = Básico -->
-    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
-    <title></title>
+    <title>Portfolio - Luis Giraldo</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-
-    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
     <meta property="og:title" content="Título de tu página" />
     <meta property="og:description" content="Descripción de tu página" />
     <meta
@@ -25,44 +21,123 @@
       name="twitter:image"
       content="URL de la imagen que quieres mostrar en Twitter"
     />
-
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
     <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
-
-    <!-- links de estilos -->
+    <link rel="stylesheet" href="font/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    
-    <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
-    <!-- Código de las plataformas de Análisis -->
     <script></script>
-    <!-- Scripts a cargar antes de la renderización -->
     <script src="preloader.js"></script>
   </head>
+
   <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
-      <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
+    <!-- Layout principal  -->
+    <div class="layout">
+
+      <!-- Barra lateral (info usuario)  -->
+      <aside class="layout__aside">
+
+        <section class="aside__user-info">
+
+          <div class="user-info__general">
+
+            <div class="user-info__container-image">
+              <img src="img/desktop/default-user.jpg" class="user-info__image" alt="Foto de perfil del usuario">
+            </div>
+
+            <h2 class="user-info__name">Luis Giraldo</h2>
+            <h4 class="user-info__job">Desarrollador web</h4>
+          </div>
+
+          <nav class="layout__menu">
+
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-house"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="sobre-mi.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-user"></i>
+                  <span class="menu__overlay">Sobre mi</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="estudios.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                  <span class="menu__overlay">Estudios</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="portafolio.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-briefcase"></i>
+                  <span class="menu__overlay">Portafolio</span>
+                </a>
+              </li>
+              
+              <li class="menu__option">
+                <a href="blog.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-book"></i>
+                  <span class="menu__overlay">Blog</span>
+                </a>
+              </li>
+              
+              <li class="menu__option">
+                <a href="contacto.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-envelope"></i>
+                  <span class="menu__overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+
+          </nav>
+
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-youtube"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="user-info__buttons">
+            <a href="#" class="user-info__btn">Descargar CV</a>
+          </div>
+
+          <footer class="user-info__footer">
+            &copy; 2024 Luis Giraldo WEB
+          </footer>
+
+        </section>
+
+      </aside>
+
+      <!-- Contenido principal  -->
+      <main class="layout__content">
+        <section class="content__page">
+          <h1 class="page__name">Luis Giraldo</h1>
+          <h2 class="page__job">Desarrollador web</h2>
+        </section>
       </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
     </div>
 
   </body>

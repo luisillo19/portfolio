@@ -3,12 +3,15 @@
  *******************/
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 /*******************
@@ -50,7 +53,7 @@ dd {
 /*******************
  Lists
  *******************/
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -60,10 +63,13 @@ ul {
 input,
 textarea,
 select,
-button {
+button,
+form,
+label {
   color: inherit;
   font: inherit;
   letter-spacing: inherit;
+  display: block;
 }
 
 /* I usually expand input and textarea to full-width */
@@ -77,6 +83,12 @@ input,
 textarea,
 button {
   border: 1px solid gray;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Some defaults for one-liner buttons */
@@ -99,9 +111,15 @@ svg,
 iframe,
 video,
 object,
-embed {
+embed,
+picture,
+figure {
   display: block;
   max-width: 100%;
+}
+
+p a{
+  display: inline;
 }
 
 /*******************
