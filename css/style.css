@@ -113,7 +113,7 @@ body{
 }
 
 .user-info__container-image::after{
-  content: "hola";
+  content: "" ;
   position: absolute;
   top: 5%;
   left: 9%;
